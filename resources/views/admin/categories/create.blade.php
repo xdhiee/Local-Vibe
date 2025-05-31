@@ -1,9 +1,16 @@
 <x-app-layout>
     <x-slot name="header">
+        <div class="bg-gradient-to-r from-blue-900 to-teal-800 -mx-6 -mt-6 px-6 pt-6 pb-8">
+            <h2 class="font-bold text-2xl text-white leading-tight flex items-center">
+                {{ __('Tambah Kategori') }}
+            </h2>
+        </div>
+    </x-slot>
+    {{-- <x-slot name="header">
         <h2 class="font-semibold text-2xl text-gray-800 dark:text-gray-100 leading-tight">
             {{ __('Tambah Kategori') }}
         </h2>
-    </x-slot>
+    </x-slot> --}}
 
     <div class="py-8">
         <div class="max-w-3xl mx-auto sm:px-6 lg:px-8">

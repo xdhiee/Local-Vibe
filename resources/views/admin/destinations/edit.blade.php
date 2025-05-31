@@ -1,9 +1,19 @@
 <x-app-layout>
     <x-slot name="header">
+        <div class="bg-gradient-to-r from-blue-900 to-teal-800 -mx-6 -mt-6 px-6 pt-6 pb-8">
+            <h2 class="font-bold text-2xl text-white leading-tight flex items-center">
+                <svg class="w-8 h-8 mr-3 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                </svg>
+                {{ __('Edit Destinasi') }}
+            </h2>
+        </div>
+    </x-slot>
+    {{-- <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
             Edit Destinasi: {{ $destination->name }}
         </h2>
-    </x-slot>
+    </x-slot> --}}
 
     <div class="py-6">
         <div class="max-w-4xl mx-auto sm:px-6 lg:px-8">

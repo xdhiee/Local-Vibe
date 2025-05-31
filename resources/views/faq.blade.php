@@ -24,6 +24,10 @@
             background-color: var(--light-color);
         }
 
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
         .navbar {
             background: white !important;
             border-bottom: 1px solid #e0e0e0;
@@ -669,7 +673,9 @@
             // Show/hide category sections
             document.querySelectorAll('.faq-category').forEach(category => {
                 const visibleItems = category.querySelectorAll(
-                    '.accordion-item[style*="block"], .accordion-item:not([style])');
+                        '.accordion-item[style*="block"],
+                    .accordion - item: not([style])
+                ');
                 category.style.display = visibleItems.length > 0 ? 'block' : 'none';
             });
         }

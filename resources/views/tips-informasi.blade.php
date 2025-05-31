@@ -24,6 +24,10 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
         .hero-section {
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
@@ -438,7 +442,7 @@
                 
                 <div class="category-card" onclick="filterByCategory('keamanan')">
                     <span class="category-icon">🛡️</span>
-                    <div class="category-title">Keamanan & Safety</div>
+                    <div class="category-title">Keamanan</div>
                     <div class="category-desc">
                         Panduan keselamatan, tips traveling aman, dan proteksi diri
                     </div>

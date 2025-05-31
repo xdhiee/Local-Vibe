@@ -37,7 +37,7 @@ class RecommendationsController extends Controller
         if ($request->filled('search')) {
             $query->where(function($q) use ($request) {
                 $q->where('name', 'LIKE', '%' . $request->search . '%')
-                  ->orWhere('description', 'LIKE', '%' . $request->search . '%');
+                ->orWhere('description', 'LIKE', '%' . $request->search . '%');
             });
         }
         
